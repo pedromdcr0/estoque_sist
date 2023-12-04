@@ -1,0 +1,55 @@
+Wed Oct 25 09:46:56 2023 - SOMADO NO ESTOQUE (22) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 145, 'QuantidadeMinima': 123, 'Unidade': 'KG'}] - POR: admin
+Wed Oct 25 09:47:03 2023 - SUBTRAIDO NO ESTOQUE (5) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 140, 'QuantidadeMinima': 123, 'Unidade': 'KG'}] - POR: admin
+Wed Oct 25 09:47:59 2023 - SOMADO NO ESTOQUE (10) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 150, 'QuantidadeMinima': 123, 'Unidade': 'KG'}] - POR: nonadmin
+Wed Oct 25 09:48:03 2023 - SUBTRAIDO NO ESTOQUE (45) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 105, 'QuantidadeMinima': 123, 'Unidade': 'KG'}] - POR: nonadmin
+Wed Oct 25 09:48:21 2023 - SOMADO NO ESTOQUE (20) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 125, 'QuantidadeMinima': 123, 'Unidade': 'KG'}] - POR: nonadmin
+Wed Oct 25 10:58:07 2023 - NOTA REMOVIDA - [{'Item': 'A', 'Fornecedor': 'AB', 'Nota': '123', 'Data': '102030', 'Preco': 123.0}] - POR: admin
+Wed Oct 25 11:03:18 2023 - CADASTRO - {'Id': 1, 'Nome': 'A', 'Quantidade': 100, 'QuantidadeMinima': 200, 'Unidade': 'KG'} - POR admin
+Wed Oct 25 11:03:31 2023 - NOTA REMOVIDA - [{'Item': 'A', 'Fornecedor': 'AB', 'Nota': '123', 'Data': '102030', 'Preco': 123.0}] - POR: admin
+Wed Oct 25 11:03:42 2023 - NOTA REMOVIDA - [{'Item': 'A', 'Fornecedor': 'CD', 'Nota': '456', 'Data': '102030', 'Preco': 123.0}] - POR: admin
+Wed Oct 25 11:38:44 2023 - CADASTRO NOTA - {'Item': 'A', 'Fornecedor': 'ef', 'Nota': '789', 'Data': '201023', 'Preco': '100'} - POR None
+Wed Oct 25 11:43:10 2023 - CADASTRO NOTA - {'Item': 'A', 'Fornecedor': 'GH', 'Nota': '12345', 'Data': '211023', 'Preco': '12.3'} - POR None
+Wed Oct 25 11:44:10 2023 - CADASTRO NOTA - {'Item': 'A', 'Fornecedor': 'GH', 'Nota': '12345', 'Data': '211023', 'Preco': 15.3} - POR None
+Wed Oct 25 11:45:05 2023 - NOTA REMOVIDA - [{'Item': 'A', 'Fornecedor': 'GH', 'Nota': '12345', 'Data': '211023', 'Preco': 15.3}] - POR: admin
+Wed Oct 25 11:45:10 2023 - NOTA REMOVIDA - [{'Item': 'A', 'Fornecedor': 'EF', 'Nota': '789', 'Data': '201023', 'Preco': 100.0}] - POR: admin
+Wed Oct 25 11:45:16 2023 - NOTA REMOVIDA - [{'Item': 'A', 'Fornecedor': 'CD', 'Nota': '456', 'Data': '102030', 'Preco': 123.0}] - POR: admin
+Wed Oct 25 11:45:29 2023 - CADASTRO - {'Id': 2, 'Nome': 'B', 'Quantidade': 100, 'QuantidadeMinima': 20, 'Unidade': 'KG'} - POR admin
+Wed Oct 25 11:45:49 2023 - CADASTRO NOTA - {'Item': 'B', 'Fornecedor': 'AB', 'Nota': '123', 'Data': '201023', 'Preco': 10.2} - POR admin
+Wed Oct 25 11:46:02 2023 - NOTA REMOVIDA - [{'Item': 'A', 'Fornecedor': 'AB', 'Nota': '123', 'Data': '102030', 'Preco': 123.0}, {'Item': 'B', 'Fornecedor': 'AB', 'Nota': '123', 'Data': '201023', 'Preco': 10.2}] - POR: admin
+Thu Oct 26 07:57:48 2023 - CADASTRO NOTA - {'Item': 'B', 'Fornecedor': 'A', 'Nota': '12345', 'Data': '23/10/23', 'Preco': 12.5} - POR admin
+Thu Oct 26 07:58:01 2023 - NOTA REMOVIDA - [{'Item': 'B', 'Fornecedor': 'A', 'Nota': '12345', 'Data': '23/10/23', 'Preco': 12.5}] - POR: admin
+Thu Oct 26 09:43:51 2023 - SOMADO NO ESTOQUE (20) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 120, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: nonadmin
+Thu Oct 26 09:44:01 2023 - SOMADO NO ESTOQUE (80) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 200, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: nonadmin
+Thu Oct 26 09:44:12 2023 - SUBTRAIDO NO ESTOQUE (20) - [{'Id': 2, 'Nome': 'B', 'Quantidade': 80, 'QuantidadeMinima': 20, 'Unidade': 'KG'}] - POR: nonadmin
+Thu Oct 26 09:46:17 2023 - SOMADO NO ESTOQUE (20) - [{'Id': 2, 'Nome': 'B', 'Quantidade': 100, 'QuantidadeMinima': 20, 'Unidade': 'KG'}] - POR: nonadmin
+Thu Oct 26 09:47:35 2023 - SOMADO NO ESTOQUE (10) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 210, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: nonadmin
+Thu Oct 26 09:48:11 2023 - SOMADO NO ESTOQUE (10) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 220, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: nonadmin
+Thu Oct 26 09:48:14 2023 - SOMADO NO ESTOQUE (10) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 230, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: nonadmin
+Thu Oct 26 09:49:14 2023 - SOMADO NO ESTOQUE (10) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 240, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: nonadmin
+Thu Oct 26 09:50:43 2023 - SOMADO NO ESTOQUE (1) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 241, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: nonadmin
+Thu Oct 26 09:52:00 2023 - SUBTRAIDO NO ESTOQUE (2) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 239, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: nonadmin
+Thu Oct 26 09:52:33 2023 - SOMADO NO ESTOQUE (1) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 240, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: nonadmin
+Thu Oct 26 09:52:40 2023 - SUBTRAIDO NO ESTOQUE (140) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 100, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: nonadmin
+Thu Oct 26 10:03:30 2023 - CADASTRO NOTA - {'Item': 'A', 'Fornecedor': 'AB', 'Nota': '1234', 'Data': '121315', 'Preco': 123.0} - POR admin
+Thu Oct 26 10:03:57 2023 - NOTA REMOVIDA - [{'Item': 'A', 'Fornecedor': 'AB', 'Nota': '1234', 'Data': '121315', 'Preco': 123.0}] - POR: admin
+Thu Oct 26 10:04:08 2023 - CADASTRO NOTA - {'Item': 'A', 'Fornecedor': 'AB', 'Nota': '123', 'Data': '121315', 'Preco': 100.0} - POR admin
+Thu Oct 26 10:06:40 2023 - SOMADO NO ESTOQUE (12) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 112, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: admin
+Thu Oct 26 10:06:53 2023 - SOMADO NO ESTOQUE (1) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 113, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: admin
+Thu Oct 26 10:07:02 2023 - SOMADO NO ESTOQUE (12) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 125, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: admin
+Thu Oct 26 10:08:22 2023 - SOMADO NO ESTOQUE (25) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 150, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: admin
+Thu Oct 26 10:11:15 2023 - SOMADO NO ESTOQUE (50) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 200, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: admin
+Thu Oct 26 10:37:11 2023 - EDITADO NO CADASTRO (NOME) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 200, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - {'Id': 1, 'Nome': 'AB', 'Quantidade': 200, 'QuantidadeMinima': 200, 'Unidade': 'KG'} - POR: admin
+Thu Oct 26 10:37:18 2023 - EDITADO NO CADASTRO (QUANT E NOME) - [{'Id': 1, 'Nome': 'AB', 'Quantidade': 200, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - {'Id': 1, 'Nome': 'A', 'Quantidade': 200, 'QuantidadeMinima': 100, 'Unidade': 'KG'} - POR: admin
+Thu Oct 26 10:37:25 2023 - EDITADO NO CADASTRO (QUANT) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 200, 'QuantidadeMinima': 100, 'Unidade': 'KG'}] - {'Id': 1, 'Nome': 'A', 'Quantidade': 200, 'QuantidadeMinima': 200, 'Unidade': 'KG'} - POR: admin
+Thu Oct 26 10:53:39 2023 - EDITADO NO CADASTRO (NOME) - [{'Id': 1, 'Nome': 'A', 'Quantidade': 200, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - {'Id': 1, 'Nome': 'B1', 'Quantidade': 200, 'QuantidadeMinima': 200, 'Unidade': 'KG'} - POR: None
+Thu Oct 26 11:03:51 2023 - EDITADO NO CADASTRO (NOME) - [{'Id': 1, 'Nome': 'B1', 'Quantidade': 200, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - {'Id': 1, 'Nome': 'A', 'Quantidade': 200, 'QuantidadeMinima': 200, 'Unidade': 'KG'} - POR: None
+Mon Nov  6 10:27:19 2023 - CADASTRO - {'Id': 3, 'Nome': 'A', 'Quantidade': 123, 'QuantidadeMinima': 23, 'Unidade': 'A'} - POR admin
+Mon Nov  6 10:34:51 2023 - REMOVIDO DO CADASTRO - [{'Id': 3, 'Nome': 'A', 'Quantidade': 123, 'QuantidadeMinima': 23, 'Unidade': 'A'}] - POR: admin
+Mon Nov  6 10:34:53 2023 - REMOVIDO DO CADASTRO - [{'Id': 2, 'Nome': 'Y', 'Quantidade': 100, 'QuantidadeMinima': 20, 'Unidade': 'KG'}] - POR: admin
+Thu Nov  9 10:16:02 2023 - SOMADO NO ESTOQUE (30) - [{'Id': 1, 'Nome': 'X', 'Quantidade': 230, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: nonadmin
+Thu Nov  9 10:16:10 2023 - SOMADO NO ESTOQUE (11) - [{'Id': 1, 'Nome': 'X', 'Quantidade': 241, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: nonadmin
+Fri Nov 10 09:10:52 2023 - SOMADO NO ESTOQUE (9) - [{'Id': 1, 'Nome': 'X', 'Quantidade': 250, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: admin
+Fri Nov 10 09:10:57 2023 - SUBTRAIDO NO ESTOQUE (50) - [{'Id': 1, 'Nome': 'X', 'Quantidade': 200, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: admin
+Fri Nov 10 09:11:23 2023 - SOMADO NO ESTOQUE (41) - [{'Id': 1, 'Nome': 'X', 'Quantidade': 241, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: admin
+Fri Nov 10 09:11:49 2023 - SOMADO NO ESTOQUE (9) - [{'Id': 1, 'Nome': 'X', 'Quantidade': 250, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: nonadmin
+Fri Nov 10 09:11:54 2023 - SUBTRAIDO NO ESTOQUE (50) - [{'Id': 1, 'Nome': 'X', 'Quantidade': 200, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: nonadmin

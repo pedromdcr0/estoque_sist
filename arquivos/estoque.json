@@ -1,0 +1,9 @@
+[
+    {
+        "Id": 1,
+        "Nome": "X",
+        "Quantidade": 200,
+        "QuantidadeMinima": 200,
+        "Unidade": "KG"
+    }
+]

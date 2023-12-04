@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles_add_estoque.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__header">
+            <a href="/producao" class="container__titulo__home">PRODUÇÃO</a>
+            <ul class="container__lateral">
+                <li><a class="container__lateral__botoes" href="/producao_a" >A</a></li>
+                <li><a class="container__lateral__botoes" href="/producao_b" >B</a></li>
+                <li><a class="container__lateral__botoes" href="/producao_c" >C</a></li>
+
+            </ul>
+            <a href="#" class="container__titulo__home">RELATORIOS</a>
+            <ul class="container__lateral">
+                <li><a class="container__lateral__botoes" href="/relatorio_prod_a" >A</a></li>
+                <li><a class="container__lateral__botoes" href="/relatorio_prod_b" >B</a></li>
+                <li><a class="container__lateral__botoes" href="/relatorio_prod_c" >C</a></li>
+            </ul>
+            <a href="#" class="container__titulo__home">CADASTRO</a>
+            <ul class="container__lateral">
+                <li><a class="container__lateral__botoes" href="/cadastro_a" >A</a></li>
+                <li><a class="container__lateral__botoes" href="/cadastro_b" >B</a></li>
+                <li><a class="container__lateral__botoes" href="/cadastro_c" >C</a></li>
+            </ul>
+            <ul class="container__lateral">
+                <li><a class="container__lateral__botoes" href="/logout">Sair</a></li>
+            </ul>
+        </div>
+        <div class="container__separator"></div>
+        <div class="container__conteudo">
+
+            <p class="container__conteudo__titulo">CADASTRO A</p>
+
+            <form method="POST" action="/processar_cadastro_a">
+
+                <div class="container__conteudo__cadastro">
+                    <label class="container__conteudo__texto" for="nome">Nome:</label>
+                    <input id="nome" class="container__conteudo__input" type="text" placeholder="Ex: C" name="nome" required>
+                </div>
+
+                <div class="container__conteudo__cadastro">
+                    <label class="container__conteudo__texto" for="quantidade">Quantidade:</label>
+                    <input id="quantidade" class="container__conteudo__input" type="number" placeholder="Ex: 100" name="quantidade" required>
+                </div>
+
+                <div class="container__conteudo__cadastro">
+                    <label class="container__conteudo__texto" for="quantmin">Quantidade mínima:</label>
+                    <input class="container__conteudo__input" type="number"
+                        placeholder="Ex: 20" id="quantmin" name="quantmin" required>
+                </div>
+
+                <div class="container__conteudo__cadastro">
+                    <label class="container__conteudo__texto" for="unidade">Unidade:</label>
+                    <input class="container__conteudo__input" placeholder="Ex: kg" id="unidade" name="unidade" required>
+                </div>
+
+                <div class="container__conteudo__cadastro__botao">
+                    <button type="submit" class="container__conteudo__botao">Cadastrar</button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
