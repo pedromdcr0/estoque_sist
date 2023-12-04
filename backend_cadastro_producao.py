@@ -4,7 +4,7 @@ import time
 
 def cadastro_a(nome, quantidade, quantmin, unidade, user):
     novo_estoque_producao = []
-    with open("arquivos/producao_a.json", "a") as cadastro_a_file:
+    with open("arquivos/producao_a.json", "r") as cadastro_a_file:
         data_a = json.load(cadastro_a_file)
         if len(data_a) >= 1:
             novo_id = data_a[-1]["Id"] + 1

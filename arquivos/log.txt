@@ -53,3 +53,4 @@ Fri Nov 10 09:10:57 2023 - SUBTRAIDO NO ESTOQUE (50) - [{'Id': 1, 'Nome': 'X', '
 Fri Nov 10 09:11:23 2023 - SOMADO NO ESTOQUE (41) - [{'Id': 1, 'Nome': 'X', 'Quantidade': 241, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: admin
 Fri Nov 10 09:11:49 2023 - SOMADO NO ESTOQUE (9) - [{'Id': 1, 'Nome': 'X', 'Quantidade': 250, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: nonadmin
 Fri Nov 10 09:11:54 2023 - SUBTRAIDO NO ESTOQUE (50) - [{'Id': 1, 'Nome': 'X', 'Quantidade': 200, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: nonadmin
+Mon Dec  4 11:42:19 2023 - CADASTRO PRODUÇÃO A - {'Id': 2, 'Nome': 'A2', 'Quantidade': 10, 'QuantidadeMinima': 10, 'Unidade': 'KGS'} - POR None

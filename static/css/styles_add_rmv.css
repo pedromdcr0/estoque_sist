@@ -83,8 +83,6 @@ body{
 .container__conteudo__removedor__texto{
     font-family: var(--fonte-principal);
     font-weight: 400;
-    font-size: 22px;
-
 }
 
 .container__conteudo__removedor__caixa{
@@ -95,7 +93,6 @@ body{
 .container__conteudo__removedor__caixa__texto{
     font-family: var(--fonte-principal);
     font-weight: 400;
-    font-size: 20px;
     margin-right: 20px;
 }
 
@@ -105,7 +102,6 @@ body{
     margin: 7px;
     border: 1px solid gray;
     border-radius: 20px;
-    font-size: 16px;
     align-items:center;
 }
 

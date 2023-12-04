@@ -249,10 +249,9 @@ def processo_add_rmv():
             return redirect(f'/processormv/{item}/{tipo_proximo}')
 
     else:
-        condicao = 1
         dados = bve.preencher_dados()
         mensagem = "alert('Este item não existe no estoque, verifique o id.')"
-        return render_template("/add_rmv.html", dados=dados, mensagem=mensagem, condicao=condicao)
+        return render_template("/add_rmv.html", dados=dados, mensagem=mensagem)
 
 
 @app.route('/processoadd/<id_item>/<tipo>')
@@ -549,6 +548,8 @@ def processar_cadastro_a():
 
     bcp.cadastro_a(nome, quantidade, quant_min, unidade, user)
 
+    return redirect("/cadastro_a")
+
 
 @app.route("/processar_cadastro_b", methods=["POST"])
 @login_required
@@ -559,6 +560,8 @@ def processar_cadastro_b():
     unidade = request.form['unidade']
 
     bcp.cadastro_b(nome, quantidade, quant_min, unidade, user)
+
+    return redirect("/cadastro_b")
 
 
 @app.route("/processar_cadastro_c", methods=["POST"])
@@ -571,11 +574,21 @@ def processar_cadastro_c():
 
     bcp.cadastro_c(nome, quantidade, quant_min, unidade, user)
 
+    return redirect("/cadastro_c")
+
 
 @app.route("/producao_a")
 @login_required
 def producao_a():
     dados = bpd.preencher_dados()
+    return render_template("producao_a.html", dados=dados)
+
+
+@app.route("/producao_a_pesquisa")
+@login_required
+def producao_a_pesquisa():
+    input_pesquisa = request.form["input_pesquisa"]
+    dados = bpd.pesquisar_dados(input_pesquisa, "a")
     return render_template("producao_a.html", dados=dados)
 
 

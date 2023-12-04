@@ -89,7 +89,6 @@ body{
 .container__conteudo__removedor__texto{
     font-family: var(--fonte-principal);
     font-weight: 400;
-    font-size: 22px;
 }
 
 .container__conteudo__removedor__caixa{
@@ -101,17 +100,20 @@ body{
 .container__conteudo__removedor__caixa__texto{
     font-family: var(--fonte-principal);
     font-weight: 400;
-    font-size: 20px;
     margin-right: 20px;
 }
 
 .container__conteudo__removedor__caixa__input{
-    align-items: center;
+    font-family: var(--fonte-principal);
+    padding: 5px;
+    margin: 7px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    align-items:center;
 }
 
 .container__conteudo__removedor__botao{
     font-family: var(--fonte-principal);
-    font-size: 16px;
     background-color: var(--cor-botao);
     padding: 10px;
     border-radius: 20px;
@@ -135,21 +137,18 @@ body{
 .container__conteudo__tabela__coluna__id{
     border: 1px solid var(--cor-texto);
     text-align: center;
-    font-size: 20px;
 }
 
 .container__conteudo__tabela__coluna{
     border: 1px solid var(--cor-texto);
     width: 200px;
     text-align: center;
-    font-size: 20px;
 }
 
 .container__conteudo__tabela__item{
     border: 1px solid var(--cor-texto);
     font-family: var(--fonte-principal);
     font-weight: 400;
-    font-size: 16px;
 }
 
 .tabela {
@@ -179,6 +178,8 @@ body{
 .container_pesquisa {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .input_pesquisa {

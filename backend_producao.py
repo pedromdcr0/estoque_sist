@@ -19,6 +19,18 @@ def preencher_dados():
     return dados
 
 
+def checar_item(id_passed, tipo):
+    with open(f"arquivos/producao_{tipo}.json", "r") as estoque_file:
+        dados_estoque = json.load(estoque_file)
+
+    if any(item["Id"] == id_passed for item in dados_estoque):
+        print('sem alert')
+        return 0
+    else:
+        print('alert?')
+        return 1
+
+
 def pesquisar_dados(input_pesquisa, tipo):
     dados_retornados = []
     with open(f"arquivos/producao_{tipo}.json", "r") as estoque_producao_file:
