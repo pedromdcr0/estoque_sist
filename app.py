@@ -584,12 +584,12 @@ def producao_a():
     return render_template("producao_a.html", dados=dados)
 
 
-@app.route("/producao_a_pesquisa")
+@app.route("/producao_a_pesquisa", methods=["POST"])
 @login_required
 def producao_a_pesquisa():
     input_pesquisa = request.form["input_pesquisa"]
-    dados = bpd.pesquisar_dados(input_pesquisa, "a")
-    return render_template("producao_a.html", dados=dados)
+    dados_pesquisa = bpd.pesquisar_dados(input_pesquisa, "a")
+    return render_template("producao_a.html", dados=dados_pesquisa)
 
 
 if __name__ == '__main__':
