@@ -22,7 +22,7 @@ def cadastro_a(nome, quantidade, quantmin, unidade, user):
             json.dump(novo_estoque_producao, novo_estoque_file, indent=4)
 
         with open("arquivos/log.txt", "a") as log_file:
-            log_cadastro = f"{time.asctime()} - CADASTRO PRODUÇÃO A - {novo_item} - POR {user}\n"
+            log_cadastro = f"{time.asctime()} - CADASTRO PRODUCAO A - {novo_item} - POR {user}\n"
             log_file.write(log_cadastro)
 
 
@@ -46,7 +46,7 @@ def cadastro_b(nome, quantidade, quantmin, unidade, user):
             json.dump(novo_estoque_producao, novo_estoque_file, indent=4)
 
         with open("arquivos/log.txt", "a") as log_file:
-            log_cadastro = f"{time.asctime()} - CADASTRO PRODUÇÃO A - {novo_item} - POR {user}\n"
+            log_cadastro = f"{time.asctime()} - CADASTRO PRODUCAO A - {novo_item} - POR {user}\n"
             log_file.write(log_cadastro)
 
 
@@ -70,5 +70,5 @@ def cadastro_c(nome, quantidade, quantmin, unidade, user):
             json.dump(novo_estoque_producao, novo_estoque_file, indent=4)
 
         with open("arquivos/log.txt", "a") as log_file:
-            log_cadastro = f"{time.asctime()} - CADASTRO PRODUÇÃO A - {novo_item} - POR {user}\n"
+            log_cadastro = f"{time.asctime()} - CADASTRO PRODUCAO A - {novo_item} - POR {user}\n"
             log_file.write(log_cadastro)

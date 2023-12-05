@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estoque</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles_index.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles_add_rmv.css') }}">
 </head>
 
 <body>
@@ -36,6 +36,30 @@
             </ul>
         </div>
         <div class="container__separator"></div>
+        <div class="container__conteudo__rmv">
+            <div class="container__conteudo__rmv">
+                <div class="container__conteudo__tabela">
+                    <table class="tabela">
+                        <thead>
+                            <tr>
+                                <th class="tabela_header">Id</th>
+                                <th class="tabela_header">Nome</th>
+                                <th class="tabela_header">Quanto falta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in dados %}
+                            <tr class="{% if item.Quantidade < item.QuantidadeMinima %}linha-amarela {%elif item.Quantidade >= item.QuantidadeMinima %}linha-verde {% endif %}">
+                                <td class="tabela_body">{{ item.Id }}</td>
+                                <td class="tabela_body">{{ item.Nome }}</td>
+                                <td class="tabela_body">{% if item.Quantidade < item.QuantidadeMinima %}{{ item.QuantidadeMinima - item.Quantidade }} {{ item.Unidade }} {% elif item.Quantidade >= item.QuantidadeMinima %} OK {% endif%}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

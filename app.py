@@ -580,7 +580,7 @@ def processar_cadastro_c():
 @app.route("/producao_a")
 @login_required
 def producao_a():
-    dados = bpd.preencher_dados()
+    dados = bpd.preencher_dados("a")
     return render_template("producao_a.html", dados=dados)
 
 
@@ -590,6 +590,132 @@ def producao_a_pesquisa():
     input_pesquisa = request.form["input_pesquisa"]
     dados_pesquisa = bpd.pesquisar_dados(input_pesquisa, "a")
     return render_template("producao_a.html", dados=dados_pesquisa)
+
+
+@app.route("/processo_producao_a", methods=["POST"])
+@login_required
+def processo_producao_a():
+    id_input = request.form["id_input"]
+
+    return redirect(f"/producao_a_1/{id_input}")
+
+
+@app.route("/producao_a_1/<id_input>", methods=["GET", "POST"])
+@login_required
+def producao_a_1(id_input):
+    item = bpd.retornar_item(id_input, "a")
+    print(id_input)
+    return render_template("producao_a_1.html", item=item, id_item=id_input)
+
+
+@app.route("/producao_atual_a/<id_item>", methods=["GET", "POST"])
+@login_required
+def producao_atual(id_item):
+    quantidade = request.form.get("quant_input")
+    print(quantidade)
+    bpd.change_quant(id_item, quantidade, "a", user)
+    return redirect("/producao_a")
+
+
+@app.route("/producao_b")
+@login_required
+def producao_b():
+    dados = bpd.preencher_dados("b")
+    return render_template("producao_b.html", dados=dados)
+
+
+@app.route("/producao_b_pesquisa", methods=["POST"])
+@login_required
+def producao_b_pesquisa():
+    input_pesquisa = request.form["input_pesquisa"]
+    dados_pesquisa = bpd.pesquisar_dados(input_pesquisa, "b")
+    return render_template("producao_b.html", dados=dados_pesquisa)
+
+
+@app.route("/processo_producao_b", methods=["POST"])
+@login_required
+def processo_producao_b():
+    id_input = request.form["id_input"]
+
+    return redirect(f"/producao_b_1/{id_input}")
+
+
+@app.route("/producao_b_1/<id_input>", methods=["GET", "POST"])
+@login_required
+def producao_b_1(id_input):
+    item = bpd.retornar_item(id_input, "a")
+    print(id_input)
+    return render_template("producao_b_1.html", item=item, id_item=id_input)
+
+
+@app.route("/producao_atual_b/<id_item>", methods=["GET", "POST"])
+@login_required
+def producao_atual_b(id_item):
+    quantidade = request.form.get("quant_input")
+    print(quantidade)
+    bpd.change_quant(id_item, quantidade, "b", user)
+    return redirect("/producao_b")
+
+
+@app.route("/producao_c")
+@login_required
+def producao_c():
+    dados = bpd.preencher_dados("c")
+    return render_template("producao_c.html", dados=dados)
+
+
+@app.route("/producao_c_pesquisa", methods=["POST"])
+@login_required
+def producao_c_pesquisa():
+    input_pesquisa = request.form["input_pesquisa"]
+    dados_pesquisa = bpd.pesquisar_dados(input_pesquisa, "c")
+    return render_template("producao_c.html", dados=dados_pesquisa)
+
+
+@app.route("/processo_producao_c", methods=["POST"])
+@login_required
+def processo_producao_c():
+    id_input = request.form["id_input"]
+
+    return redirect(f"/producao_c_1/{id_input}")
+
+
+@app.route("/producao_c_1/<id_input>", methods=["GET", "POST"])
+@login_required
+def producao_c_1(id_input):
+    item = bpd.retornar_item(id_input, "c")
+    print(id_input)
+    return render_template("producao_c_1.html", item=item, id_item=id_input)
+
+
+@app.route("/producao_atual_c/<id_item>", methods=["GET", "POST"])
+@login_required
+def producao_atual_c(id_item):
+    quantidade = request.form.get("quant_input")
+    print(quantidade)
+    bpd.change_quant(id_item, quantidade, "c", user)
+    return redirect("/producao_c")
+
+
+@app.route("/relatorio_prod_a")
+@login_required
+def relatorio_a():
+    dados = bpd.preencher_dados("a")
+    return render_template("relatorio_a.html", dados=dados)
+
+
+@app.route("/relatorio_prod_b")
+@login_required
+def relatorio_b():
+    dados = bpd.preencher_dados("b")
+    return render_template("relatorio_b.html", dados=dados)
+
+
+@app.route("/relatorio_prod_c")
+@login_required
+def relatorio_c():
+    dados = bpd.preencher_dados("c")
+    return render_template("relatorio_c.html", dados=dados)
 
 
 if __name__ == '__main__':

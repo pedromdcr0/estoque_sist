@@ -53,4 +53,15 @@ Fri Nov 10 09:10:57 2023 - SUBTRAIDO NO ESTOQUE (50) - [{'Id': 1, 'Nome': 'X', '
 Fri Nov 10 09:11:23 2023 - SOMADO NO ESTOQUE (41) - [{'Id': 1, 'Nome': 'X', 'Quantidade': 241, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: admin
 Fri Nov 10 09:11:49 2023 - SOMADO NO ESTOQUE (9) - [{'Id': 1, 'Nome': 'X', 'Quantidade': 250, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: nonadmin
 Fri Nov 10 09:11:54 2023 - SUBTRAIDO NO ESTOQUE (50) - [{'Id': 1, 'Nome': 'X', 'Quantidade': 200, 'QuantidadeMinima': 200, 'Unidade': 'KG'}] - POR: nonadmin
-Mon Dec  4 11:42:19 2023 - CADASTRO PRODUÇÃO A - {'Id': 2, 'Nome': 'A2', 'Quantidade': 10, 'QuantidadeMinima': 10, 'Unidade': 'KGS'} - POR None
+Mon Dec  4 11:42:19 2023 - CADASTRO PRODUCAO A - {'Id': 2, 'Nome': 'A2', 'Quantidade': 10, 'QuantidadeMinima': 10, 'Unidade': 'KGS'} - POR None
+Tue Dec  5 09:39:26 2023 - MUDANÇA NO ESTOQUE a (4) - [{'Id': 1, 'Nome': 'A1', 'Quantidade': '4', 'QuantidadeMinima': 10, 'Unidade': 'KG'}] - POR: None
+Tue Dec  5 09:40:22 2023 - MUDANÇA NO ESTOQUE a (7) - [{'Id': 1, 'Nome': 'A1', 'Quantidade': 7, 'QuantidadeMinima': 10, 'Unidade': 'KG'}] - POR: None
+Tue Dec  5 09:40:29 2023 - MUDANÇA NO ESTOQUE a (10) - [{'Id': 1, 'Nome': 'A1', 'Quantidade': 10, 'QuantidadeMinima': 10, 'Unidade': 'KG'}] - POR: None
+Tue Dec  5 09:43:19 2023 - MUDANÇA NO ESTOQUE a (2) - [{'Id': 1, 'Nome': 'A1', 'Quantidade': 2, 'QuantidadeMinima': 10, 'Unidade': 'KG'}] - POR: None
+Tue Dec  5 09:43:27 2023 - MUDANÇA NO ESTOQUE a (11) - [{'Id': 1, 'Nome': 'A1', 'Quantidade': 11, 'QuantidadeMinima': 10, 'Unidade': 'KG'}] - POR: None
+Tue Dec  5 09:44:16 2023 - MUDANÇA NO ESTOQUE a (4) - [{'Id': 1, 'Nome': 'A1', 'Quantidade': 4, 'QuantidadeMinima': 10, 'Unidade': 'KG'}] - POR: admin
+Tue Dec  5 09:44:20 2023 - MUDANÇA NO ESTOQUE a (0) - [{'Id': 1, 'Nome': 'A1', 'Quantidade': 0, 'QuantidadeMinima': 10, 'Unidade': 'KG'}] - POR: admin
+Tue Dec  5 09:44:26 2023 - MUDANÇA NO ESTOQUE a (10) - [{'Id': 1, 'Nome': 'A1', 'Quantidade': 10, 'QuantidadeMinima': 10, 'Unidade': 'KG'}] - POR: admin
+Tue Dec  5 09:44:48 2023 - MUDANÇA NO ESTOQUE a (2) - [{'Id': 1, 'Nome': 'A1', 'Quantidade': 2, 'QuantidadeMinima': 10, 'Unidade': 'KG'}] - POR: admin
+Tue Dec  5 09:44:51 2023 - MUDANÇA NO ESTOQUE a (10) - [{'Id': 1, 'Nome': 'A1', 'Quantidade': 10, 'QuantidadeMinima': 10, 'Unidade': 'KG'}] - POR: admin
+Tue Dec  5 10:16:07 2023 - MUDANÇA NO ESTOQUE a (2) - [{'Id': 1, 'Nome': 'A1', 'Quantidade': 2, 'QuantidadeMinima': 10, 'Unidade': 'KG'}] - POR: None

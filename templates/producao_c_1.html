@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estoque</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles_index.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles_add_rmv.css') }}">
 </head>
 
 <body>
@@ -36,6 +36,32 @@
             </ul>
         </div>
         <div class="container__separator"></div>
+        <div class="container__conteudo__rmv">
+            <div class="container__conteudo__rmv__div">
+                <div>
+
+                    <div class="container__conteudo__removedor">
+
+                        <p class="container__conteudo__removedor__texto">Qual a quantidade atual?</p>
+
+                        <form method="POST" action="/producao_atual_c/{{ id_item }}">
+                            <div class="container__conteudo__removedor__caixa">
+                                <p class="container__conteudo__removedor__caixa__texto">Item: {{ item.Nome }}</p>
+                                <p class="container__conteudo__removedor__caixa__texto">Quantidade atual: {{ item.Quantidade }}</p>
+
+                            </div>
+                            <div>
+                                <input class="container__conteudo__removedor__caixa__input" type="number" name="quant_input" placeholder="Quantidade..." required>
+                            </div>
+                            <button class="container__conteudo__removedor__botao" type="submit" >Modificar</button>
+                        </form>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

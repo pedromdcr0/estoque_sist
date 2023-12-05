@@ -1,14 +1,14 @@
 [
     {
         "Id": 1,
-        "Nome": "A1",
-        "Quantidade": 2,
+        "Nome": "C1",
+        "Quantidade": 10,
         "QuantidadeMinima": 10,
         "Unidade": "KG"
     },
     {
         "Id": 2,
-        "Nome": "A2",
+        "Nome": "C2",
         "Quantidade": 10,
         "QuantidadeMinima": 10,
         "Unidade": "KGS"
